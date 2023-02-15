@@ -1,0 +1,53 @@
+Docker
+-Incase of VMs: poor resource utilization
+So docker came into picture
+
+-docker hub stores images
+-repo contains source file
+
+1) start the docker service
+service docker start
+
+Steps:
+1.Application<-using DockerFile->Image->Container
+2.DockerHub-->Download image->Running as a container
+
+****step:2****
+i) docker images
+Goto dockerhub account->download image
+command:docker pull httpd (first checks in local, if not present goes to dockerhub)
+
+ii)running image
+docker run --name=niqapache -p 80:80 httpd
+
+iii)listing of running containers
+docker ps
+docker ps -a (lists running and stopped containers)
+
+-starting and stopping containers
+docker start container_id
+docker stop container_id
+
+-memory info
+docker system df
+
+-container info
+docker inspect container_id
+
+-remove container
+docker rm container_id
+
+-removing dangling images,stopped containers
+docker system prune
+
+-removing images
+docker rmi img_id1 img_id2
+
+
+
+
+
+
+
+
+
