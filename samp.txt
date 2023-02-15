@@ -1,4 +1,2 @@
 hhiiiii
-first
-second
-third
+first commit in dev
